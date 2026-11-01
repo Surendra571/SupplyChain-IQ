@@ -1,0 +1,60 @@
+# SupplyChain IQ - Synthetic Data Generation Configuration
+
+seed: 20261022
+
+scales:
+  starter:
+    skus: 100
+    locations: 5
+    weeks: 12
+    suppliers: 25
+    purchase_orders: 400
+  medium:
+    skus: 500
+    locations: 15
+    weeks: 26
+    suppliers: 120
+    purchase_orders: 2500
+  full:
+    skus: 3000
+    locations: 50
+    weeks: 52
+    suppliers: 500
+    purchase_orders: 10000
+
+categories:
+  - Electronics
+  - Mechanical
+  - Raw Materials
+  - Packaging
+  - Subassemblies
+
+units_of_measure:
+  - EA
+  - KG
+  - METER
+  - LITER
+  - BOX
+
+anomaly_scenarios:
+  - id: ANOM-001
+    name: "Inbound inventory counted twice"
+    type: "INBOUND_INVENTORY_COUNTED_TWICE"
+    severity: "CRITICAL"
+  - id: ANOM-002
+    name: "Substitute SKU not approved"
+    type: "SUBSTITUTE_SKU_NOT_APPROVED"
+    severity: "HIGH"
+  - id: ANOM-003
+    name: "Supplier capacity exceeded"
+    type: "SUPPLIER_CAPACITY_EXCEEDED"
+    severity: "CRITICAL"
+  - id: ANOM-004
+    name: "Shortage calculated without lead time"
+    type: "SHORTAGE_CALCULATED_WITHOUT_LEAD_TIME"
+    severity: "HIGH"
+  - id: ANOM-005
+    name: "Unit of measure mismatch"
+    type: "UNIT_OF_MEASURE_MISMATCH"
+    severity: "CRITICAL"
+

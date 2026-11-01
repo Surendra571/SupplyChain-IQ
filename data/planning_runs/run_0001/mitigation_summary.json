@@ -1,0 +1,14 @@
+{
+  "planning_run_id": "RUN-20261101035838-6d0d5b",
+  "total_shortages": 1405,
+  "mitigated_shortages": 0,
+  "unmitigated_shortages": 1405,
+  "total_deficit_qty": 1622511,
+  "total_recovered_qty": 0,
+  "total_mitigation_cost": 0.0,
+  "total_revenue_protected": 0.0,
+  "average_service_gain": 0.0,
+  "solver_status": "FEASIBLE",
+  "execution_time_seconds": 10.9294,
+  "recommended_options_count": 0
+}

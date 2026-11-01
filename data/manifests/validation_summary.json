@@ -1,0 +1,23 @@
+{
+  "dataset_name": "starter",
+  "status": "FAILED",
+  "total_records_checked": 5791,
+  "total_issues_found": 5,
+  "severity_breakdown": {
+    "HIGH": 2,
+    "CRITICAL": 3
+  },
+  "category_breakdown": {
+    "DATE_ORDERING": 1,
+    "UNIT_OF_MEASURE_CONSISTENCY": 1,
+    "SUPPLIER_CAPACITY": 1,
+    "DUPLICATE_RECEIPT": 1,
+    "SUBSTITUTE_APPROVAL": 1
+  },
+  "entity_breakdown": {
+    "purchase_order_lines": 2,
+    "supplier_capacities": 1,
+    "inventories": 1,
+    "substitute_skus": 1
+  }
+}

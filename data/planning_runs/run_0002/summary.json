@@ -1,0 +1,43 @@
+{
+  "run_id": "RUN-20261101065534-2aa290",
+  "run_number": 2,
+  "horizon_weeks": 12,
+  "total_skus": 100,
+  "total_locations": 5,
+  "total_projections": 6000,
+  "total_shortages": 1405,
+  "critical_shortages": 700,
+  "warning_shortages": 705,
+  "total_demand_shortage_qty": 1386695,
+  "total_safety_stock_gap_qty": 1622511,
+  "total_financial_impact": 320163158.85,
+  "root_cause_breakdown": {
+    "Invalid substitute": 12,
+    "Missing lead time": 716,
+    "Insufficient opening inventory": 157,
+    "Supplier delay": 489,
+    "Transportation delay": 30,
+    "Supplier capacity shortage": 1
+  },
+  "priority_breakdown": {
+    "High": 726,
+    "Medium": 159,
+    "Critical": 520
+  },
+  "started_at": "2026-11-01T06:55:34.787881+00:00",
+  "completed_at": "2026-11-01T06:55:35.798705+00:00",
+  "execution_time_seconds": 1.0102,
+  "config": {
+    "horizon_weeks": 12,
+    "w_days": 0.25,
+    "w_qty": 0.2,
+    "w_financial": 0.25,
+    "w_criticality": 0.15,
+    "w_recovery": 0.15,
+    "threshold_critical": 75.0,
+    "threshold_high": 50.0,
+    "threshold_medium": 25.0,
+    "financial_ceiling": 50000.0,
+    "demand_spike_multiplier": 1.5
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "evaluation_timestamp": "2026-10-31T15:58:10.530994+00:00",
+  "total_ground_truth_anomalies": 5,
+  "true_positives_count": 5,
+  "false_positives_count": 0,
+  "false_negatives_count": 0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1_score": 1.0,
+  "true_positives": [
+    {
+      "issue_id": "ISSUE-000001",
+      "anomaly_id": "ANOM-004",
+      "scenario_name": "Shortage calculated without lead time",
+      "anomaly_type": "SHORTAGE_CALCULATED_WITHOUT_LEAD_TIME",
+      "record_id": "POL-PO-2026-000001-01",
+      "entity_type": "purchase_order_lines",
+      "detection_rule": "RULE_05_PO_LINE_LEAD_TIME_FEASIBLE"
+    },
+    {
+      "issue_id": "ISSUE-000002",
+      "anomaly_id": "ANOM-005",
+      "scenario_name": "Unit of measure mismatch",
+      "anomaly_type": "UNIT_OF_MEASURE_MISMATCH",
+      "record_id": "POL-PO-2026-000400-03",
+      "entity_type": "purchase_order_lines",
+      "detection_rule": "RULE_07_UOM_COST_CONSISTENCY"
+    },
+    {
+      "issue_id": "ISSUE-000003",
+      "anomaly_id": "ANOM-003",
+      "scenario_name": "Supplier capacity exceeded",
+      "anomaly_type": "SUPPLIER_CAPACITY_EXCEEDED",
+      "record_id": "CAP-SUPSK-000001-2026W01",
+      "entity_type": "supplier_capacities",
+      "detection_rule": "RULE_08_SUPPLIER_COMMITTED_WITHIN_CAPACITY"
+    },
+    {
+      "issue_id": "ISSUE-000004",
+      "anomaly_id": "ANOM-001",
+      "scenario_name": "Inbound inventory counted twice",
+      "anomaly_type": "INBOUND_INVENTORY_COUNTED_TWICE",
+      "record_id": "INV-SKU-000001-LOC-000001",
+      "entity_type": "inventories",
+      "detection_rule": "RULE_09_DUPLICATE_RECEIPT_POSTING"
+    },
+    {
+      "issue_id": "ISSUE-000005",
+      "anomaly_id": "ANOM-002",
+      "scenario_name": "Substitute SKU not approved",
+      "anomaly_type": "SUBSTITUTE_SKU_NOT_APPROVED",
+      "record_id": "SUB-000001",
+      "entity_type": "substitute_skus",
+      "detection_rule": "RULE_10_SUBSTITUTE_APPROVAL_ACTIVE"
+    }
+  ],
+  "false_positives": [],
+  "false_negatives": [],
+  "scenario_breakdown": {
+    "ANOM-001": {
+      "scenario_name": "Inbound inventory counted twice",
+      "anomaly_type": "INBOUND_INVENTORY_COUNTED_TWICE",
+      "target_entity": "inventories",
+      "target_business_id": "INV-SKU-000001-LOC-000001",
+      "detected": true,
+      "status": "PASS"
+    },
+    "ANOM-002": {
+      "scenario_name": "Substitute SKU not approved",
+      "anomaly_type": "SUBSTITUTE_SKU_NOT_APPROVED",
+      "target_entity": "substitute_skus",
+      "target_business_id": "SUB-000001",
+      "detected": true,
+      "status": "PASS"
+    },
+    "ANOM-003": {
+      "scenario_name": "Supplier capacity exceeded",
+      "anomaly_type": "SUPPLIER_CAPACITY_EXCEEDED",
+      "target_entity": "supplier_capacities",
+      "target_business_id": "CAP-SUPSK-000001-2026W01",
+      "detected": true,
+      "status": "PASS"
+    },
+    "ANOM-004": {
+      "scenario_name": "Shortage calculated without lead time",
+      "anomaly_type": "SHORTAGE_CALCULATED_WITHOUT_LEAD_TIME",
+      "target_entity": "purchase_order_lines",
+      "target_business_id": "POL-PO-2026-000001-01",
+      "detected": true,
+      "status": "PASS"
+    },
+    "ANOM-005": {
+      "scenario_name": "Unit of measure mismatch",
+      "anomaly_type": "UNIT_OF_MEASURE_MISMATCH",
+      "target_entity": "purchase_order_lines",
+      "target_business_id": "POL-PO-2026-000400-03",
+      "detected": true,
+      "status": "PASS"
+    }
+  },
+  "evaluation_result": "SUCCESS"
+}

@@ -1,0 +1,26 @@
+{
+  "project": "SupplyChain IQ",
+  "seed": 20261022,
+  "scale": "medium",
+  "generated_at": "2026-01-05T00:00:00+00:00",
+  "total_entities": 16,
+  "row_counts": {
+    "skus": 500,
+    "locations": 15,
+    "suppliers": 120,
+    "supplier_skus": 787,
+    "boms": 100,
+    "bom_components": 398,
+    "substitute_skus": 62,
+    "forecast_demands": 26000,
+    "inventories": 7500,
+    "inventory_transactions": 7501,
+    "supplier_capacities": 20462,
+    "lead_times": 210,
+    "production_plans": 13000,
+    "purchase_orders": 2500,
+    "purchase_order_lines": 4973,
+    "shipments": 833
+  },
+  "anomaly_count": 5
+}
